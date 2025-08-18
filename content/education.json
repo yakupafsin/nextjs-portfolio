@@ -1,0 +1,32 @@
+[
+  {
+    "school": "University of California, Berkeley",
+    "degree": "Bachelor of Science in Computer Science",
+    "location": "Berkeley, CA",
+    "start": "2016",
+    "end": "2020",
+    "gpa": "3.8/4.0",
+    "honors": [
+      "Dean's List (Fall 2018, Spring 2019)",
+      "Magna Cum Laude"
+    ],
+    "relevant_courses": [
+      "Data Structures & Algorithms",
+      "Software Engineering",
+      "Database Systems",
+      "Computer Networks"
+    ]
+  },
+  {
+    "school": "AWS",
+    "degree": "AWS Certified Solutions Architect",
+    "location": "Online",
+    "start": "2021",
+    "end": "2021",
+    "credential_id": "AWS-SAA-123456",
+    "skills": [
+      "Cloud Architecture",
+      "AWS Services"
+    ]
+  }
+]

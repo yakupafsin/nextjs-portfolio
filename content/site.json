@@ -1,0 +1,21 @@
+{
+  "name": "John Doe",
+  "role": "Full-Stack Developer",
+  "location": "San Francisco, CA",
+  "headline": "Building exceptional digital experiences with modern technologies",
+  "summary": "Passionate full-stack developer with 5+ years of experience creating scalable web applications. I specialize in React, Next.js, and Node.js, with a focus on performance, accessibility, and user experience.",
+  "email": "john.doe@example.com",
+  "website": "https://johndoe.dev",
+  "cvUrl": "https://johndoe.dev/resume.pdf",
+  "social": {
+    "github": "https://github.com/johndoe",
+    "linkedin": "https://linkedin.com/in/johndoe",
+    "twitter": "https://twitter.com/johndoe"
+  },
+  "avatar": "/avatar.jpg",
+  "seo": {
+    "title": "John Doe - Full-Stack Developer",
+    "description": "Full-stack developer passionate about building exceptional digital experiences with React, Next.js, and modern web technologies.",
+    "keywords": ["developer", "software engineer", "web development", "react", "nextjs", "typescript"]
+  }
+}

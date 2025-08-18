@@ -1,0 +1,43 @@
+[
+  {
+    "title": "Senior Full-Stack Developer",
+    "company": "TechCorp Inc.",
+    "location": "San Francisco, CA",
+    "type": "Full-time",
+    "start": "2022-01",
+    "end": "Present",
+    "summary": "Lead development of scalable web applications serving 100k+ users. Architect and implement full-stack solutions using modern technologies.",
+    "achievements": [
+      "Improved application performance by 40% through code optimization and caching strategies",
+      "Led a team of 4 developers in delivering 3 major product features ahead of schedule",
+      "Implemented comprehensive testing strategy reducing production bugs by 60%"
+    ],
+    "stack": [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "PostgreSQL",
+      "AWS"
+    ]
+  },
+  {
+    "title": "Frontend Developer",
+    "company": "StartupXYZ",
+    "location": "Remote",
+    "type": "Full-time",
+    "start": "2020-06",
+    "end": "2021-12",
+    "summary": "Developed responsive web applications and collaborated with design team to create exceptional user experiences.",
+    "achievements": [
+      "Built and launched 5 customer-facing features increasing user engagement by 25%",
+      "Migrated legacy jQuery codebase to modern React architecture",
+      "Established component library used across 3 different products"
+    ],
+    "stack": [
+      "JavaScript",
+      "Vue.js",
+      "Python",
+      "MongoDB"
+    ]
+  }
+]
