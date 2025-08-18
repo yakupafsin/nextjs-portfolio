@@ -1,0 +1,66 @@
+[
+  {
+    "category": "Languages",
+    "items": [
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "Python",
+      "Go",
+      "SQL"
+    ]
+  },
+  {
+    "category": "Frontend",
+    "items": [
+      "React",
+      "Next.js",
+      "Vue.js",
+      "Tailwind CSS",
+      "HTML5/CSS3",
+      "Responsive Design"
+    ]
+  },
+  {
+    "category": "Backend",
+    "items": [
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "MongoDB",
+      "GraphQL",
+      "REST APIs"
+    ]
+  },
+  {
+    "category": "Cloud & DevOps",
+    "items": [
+      "AWS",
+      "Vercel",
+      "Docker",
+      "GitHub Actions",
+      "CI/CD",
+      "Serverless"
+    ]
+  },
+  {
+    "category": "Testing",
+    "items": [
+      "Jest",
+      "Testing Library",
+      "Cypress",
+      "Unit Testing",
+      "Integration Testing"
+    ]
+  },
+  {
+    "category": "Tools & Others",
+    "items": [
+      "Git",
+      "VS Code",
+      "Figma",
+      "Agile/Scrum",
+      "Performance Optimization",
+      "SEO"
+    ]
+  }
+]

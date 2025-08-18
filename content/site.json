@@ -1,0 +1,21 @@
+{
+  "name": "{{YOUR_NAME}}",
+  "role": "{{YOUR_ROLE}}",
+  "location": "{{CITY, COUNTRY}}",
+  "headline": "{{SHORT_VALUE_PROP}}",
+  "summary": "{{2-3 sentence professional summary describing your expertise, passion, and what you bring to the table}}",
+  "email": "{{EMAIL}}",
+  "website": "{{PORTFOLIO_URL}}",
+  "cvUrl": "{{CV_URL}}",
+  "social": {
+    "github": "{{GITHUB_URL}}",
+    "linkedin": "{{LINKEDIN_URL}}",
+    "twitter": "{{TWITTER_URL}}"
+  },
+  "avatar": "/avatar.jpg",
+  "seo": {
+    "title": "{{YOUR_NAME}} - {{YOUR_ROLE}}",
+    "description": "{{SEO_DESCRIPTION}}",
+    "keywords": ["developer", "software engineer", "web development", "{{YOUR_SKILLS}}"]
+  }
+}

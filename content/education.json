@@ -1,0 +1,32 @@
+[
+  {
+    "school": "{{UNIVERSITY_NAME}}",
+    "degree": "{{DEGREE_TYPE}} in {{FIELD_OF_STUDY}}",
+    "location": "{{CITY, COUNTRY}}",
+    "start": "{{START_YEAR}}",
+    "end": "{{END_YEAR}}",
+    "gpa": "{{GPA (optional)}}",
+    "honors": [
+      "{{Honor or achievement 1}}",
+      "{{Honor or achievement 2}}"
+    ],
+    "relevant_courses": [
+      "Data Structures & Algorithms",
+      "Software Engineering",
+      "Database Systems",
+      "Computer Networks"
+    ]
+  },
+  {
+    "school": "{{CERTIFICATION_PROVIDER}}",
+    "degree": "{{CERTIFICATION_NAME}}",
+    "location": "Online",
+    "start": "{{YEAR}}",
+    "end": "{{YEAR}}",
+    "credential_id": "{{CREDENTIAL_ID}}",
+    "skills": [
+      "{{Skill 1}}",
+      "{{Skill 2}}"
+    ]
+  }
+]

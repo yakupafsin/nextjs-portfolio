@@ -1,0 +1,43 @@
+[
+  {
+    "title": "{{JOB_TITLE}}",
+    "company": "{{COMPANY_NAME}}",
+    "location": "{{LOCATION}}",
+    "type": "Full-time",
+    "start": "{{START_DATE}}",
+    "end": "{{END_DATE or 'Present'}}",
+    "summary": "{{Brief description of your role and responsibilities}}",
+    "achievements": [
+      "{{Achievement 1 with specific metrics if possible}}",
+      "{{Achievement 2 with impact description}}",
+      "{{Achievement 3 highlighting technical skills}}"
+    ],
+    "stack": [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "PostgreSQL",
+      "AWS"
+    ]
+  },
+  {
+    "title": "{{PREVIOUS_JOB_TITLE}}",
+    "company": "{{PREVIOUS_COMPANY}}",
+    "location": "{{LOCATION}}",
+    "type": "Full-time",
+    "start": "{{START_DATE}}",
+    "end": "{{END_DATE}}",
+    "summary": "{{Brief description of your previous role}}",
+    "achievements": [
+      "{{Previous achievement 1}}",
+      "{{Previous achievement 2}}",
+      "{{Previous achievement 3}}"
+    ],
+    "stack": [
+      "JavaScript",
+      "Vue.js",
+      "Python",
+      "MongoDB"
+    ]
+  }
+]
