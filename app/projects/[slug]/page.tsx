@@ -1,5 +1,4 @@
 import { notFound } from 'next/navigation'
-import { serialize } from 'next-mdx-remote/serialize'
 import { getProject, getProjects } from '@/lib/mdx'
 import { Mdx } from '@/components/mdx-components'
 import { ProjectHeader } from '@/components/project-header'
@@ -69,9 +68,6 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     notFound()
   }
 
-  // Serialize the MDX content
-  const mdxSource = await serialize(project.content)
-
   return (
     <article className="container py-12">
       <ProjectHeader project={project} />
@@ -79,9 +75,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       <div className="grid gap-12 lg:grid-cols-3">
         <div className="lg:col-span-2">
           <Section>
-            <div className="prose prose-lg dark:prose-invert">
-              <Mdx source={mdxSource} />
-            </div>
+            <Mdx content={project.content} />
           </Section>
         </div>
 

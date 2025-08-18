@@ -14,19 +14,28 @@ export function formatDate(date: string | Date) {
 }
 
 export function formatDateRange(start: string, end?: string) {
-  const startDate = new Date(start)
-  const endDate = end ? new Date(end) : null
-  
+  // Handle YYYY-MM format by adding day
+  const parseDate = (dateStr: string) => {
+    if (dateStr === 'Present') return null
+    if (dateStr.match(/^\d{4}-\d{2}$/)) {
+      return new Date(dateStr + '-01')
+    }
+    return new Date(dateStr)
+  }
+
+  const startDate = parseDate(start)
+  const endDate = end && end !== 'Present' ? parseDate(end) : null
+
   const formatOptions: Intl.DateTimeFormatOptions = {
     month: 'short',
     year: 'numeric',
   }
-  
-  const startFormatted = new Intl.DateTimeFormat('en-US', formatOptions).format(startDate)
-  const endFormatted = endDate 
+
+  const startFormatted = startDate ? new Intl.DateTimeFormat('en-US', formatOptions).format(startDate) : start
+  const endFormatted = endDate
     ? new Intl.DateTimeFormat('en-US', formatOptions).format(endDate)
-    : 'Present'
-  
+    : (end || 'Present')
+
   return `${startFormatted} - ${endFormatted}`
 }
 

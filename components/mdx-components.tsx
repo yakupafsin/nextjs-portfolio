@@ -1,6 +1,3 @@
-'use client'
-
-import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -119,13 +116,13 @@ const components = {
 }
 
 interface MdxProps {
-  source: MDXRemoteSerializeResult
+  content: string
 }
 
-export function Mdx({ source }: MdxProps) {
+export function Mdx({ content }: MdxProps) {
   return (
-    <div className="mdx">
-      <MDXRemote {...source} components={components} />
+    <div className="mdx prose prose-lg dark:prose-invert">
+      <div dangerouslySetInnerHTML={{ __html: content }} />
     </div>
   )
 }
