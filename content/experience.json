@@ -1,16 +1,16 @@
 [
   {
-    "title": "{{JOB_TITLE}}",
-    "company": "{{COMPANY_NAME}}",
-    "location": "{{LOCATION}}",
+    "title": "Senior Full-Stack Developer",
+    "company": "TechCorp Inc.",
+    "location": "San Francisco, CA",
     "type": "Full-time",
-    "start": "{{START_DATE}}",
-    "end": "{{END_DATE or 'Present'}}",
-    "summary": "{{Brief description of your role and responsibilities}}",
+    "start": "2022-01",
+    "end": "Present",
+    "summary": "Lead development of scalable web applications serving 100k+ users. Architect and implement full-stack solutions using modern technologies.",
     "achievements": [
-      "{{Achievement 1 with specific metrics if possible}}",
-      "{{Achievement 2 with impact description}}",
-      "{{Achievement 3 highlighting technical skills}}"
+      "Improved application performance by 40% through code optimization and caching strategies",
+      "Led a team of 4 developers in delivering 3 major product features ahead of schedule",
+      "Implemented comprehensive testing strategy reducing production bugs by 60%"
     ],
     "stack": [
       "React",
@@ -21,17 +21,17 @@
     ]
   },
   {
-    "title": "{{PREVIOUS_JOB_TITLE}}",
-    "company": "{{PREVIOUS_COMPANY}}",
-    "location": "{{LOCATION}}",
+    "title": "Frontend Developer",
+    "company": "StartupXYZ",
+    "location": "Remote",
     "type": "Full-time",
-    "start": "{{START_DATE}}",
-    "end": "{{END_DATE}}",
-    "summary": "{{Brief description of your previous role}}",
+    "start": "2020-06",
+    "end": "2021-12",
+    "summary": "Developed responsive web applications and collaborated with design team to create exceptional user experiences.",
     "achievements": [
-      "{{Previous achievement 1}}",
-      "{{Previous achievement 2}}",
-      "{{Previous achievement 3}}"
+      "Built and launched 5 customer-facing features increasing user engagement by 25%",
+      "Migrated legacy jQuery codebase to modern React architecture",
+      "Established component library used across 3 different products"
     ],
     "stack": [
       "JavaScript",

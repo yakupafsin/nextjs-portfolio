@@ -7,10 +7,7 @@ import { ProjectLinks } from '@/components/project-links'
 import { ProjectImpact } from '@/components/project-impact'
 import { ProjectStack } from '@/components/project-stack'
 import { Section } from '@/components/section'
-import remarkGfm from 'remark-gfm'
-import rehypeHighlight from 'rehype-highlight'
-import rehypeSlug from 'rehype-slug'
-import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+
 
 interface ProjectPageProps {
   params: {
@@ -73,24 +70,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   }
 
   // Serialize the MDX content
-  const mdxSource = await serialize(project.content, {
-    mdxOptions: {
-      remarkPlugins: [remarkGfm],
-      rehypePlugins: [
-        rehypeHighlight,
-        rehypeSlug,
-        [
-          rehypeAutolinkHeadings,
-          {
-            properties: {
-              className: ['subheading-anchor'],
-              ariaLabel: 'Link to section',
-            },
-          },
-        ],
-      ],
-    },
-  })
+  const mdxSource = await serialize(project.content)
 
   return (
     <article className="container py-12">

@@ -37,7 +37,6 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full bg-white/20 p-2 text-white hover:bg-white/30 transition-colors"
-              onClick={(e) => e.stopPropagation()}
             >
               <ExternalLink className="h-5 w-5" />
               <span className="sr-only">View demo</span>
@@ -49,7 +48,6 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full bg-white/20 p-2 text-white hover:bg-white/30 transition-colors"
-              onClick={(e) => e.stopPropagation()}
             >
               <Github className="h-5 w-5" />
               <span className="sr-only">View source</span>

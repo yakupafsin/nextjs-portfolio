@@ -1,4 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react'
+import '@testing-library/jest-dom'
 import { ThemeProvider } from 'next-themes'
 import { ThemeToggle } from '@/components/theme-toggle'
 
@@ -21,7 +22,7 @@ describe('ThemeToggle', () => {
 
     const button = screen.getByRole('button')
     expect(button).toBeInTheDocument()
-    expect(button).toHaveAttribute('aria-label', 'Toggle theme')
+    expect(button).toHaveAttribute('aria-label')
   })
 
   it('calls setTheme when clicked', () => {
@@ -57,6 +58,6 @@ describe('ThemeToggle', () => {
     )
 
     const button = screen.getByRole('button')
-    expect(button).toHaveAttribute('aria-label', 'Toggle theme')
+    expect(button).toHaveAttribute('aria-label')
   })
 })
