@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Calendar, Clock } from 'lucide-react'
-import type { Project } from 'contentlayer/generated'
+import type { Project } from '@/lib/mdx'
 
 interface ProjectHeaderProps {
   project: Project

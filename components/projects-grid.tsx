@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from 'react'
 import { ProjectCard } from '@/components/project-card'
-import type { Project } from 'contentlayer/generated'
+import type { Project } from '@/lib/mdx'
 
 interface ProjectsGridProps {
   projects: Project[]

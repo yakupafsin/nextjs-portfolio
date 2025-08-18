@@ -1,4 +1,4 @@
-import { allProjects } from 'contentlayer/generated'
+import { getProjects } from '@/lib/mdx'
 import { ProjectsGrid } from '@/components/projects-grid'
 import { ProjectsFilter } from '@/components/projects-filter'
 import { Section } from '@/components/section'
@@ -8,15 +8,17 @@ export const metadata = {
   description: 'A collection of projects I\'ve worked on, showcasing my skills and experience.',
 }
 
-export default function ProjectsPage() {
+export default async function ProjectsPage() {
+  const projects = await getProjects()
+
   // Get all unique tags from projects
   const allTags = Array.from(
-    new Set(allProjects.flatMap((project) => project.tags))
+    new Set(projects.flatMap((project) => project.tags))
   ).sort()
 
   // Get all unique stack items
   const allStack = Array.from(
-    new Set(allProjects.flatMap((project) => project.stack))
+    new Set(projects.flatMap((project) => project.stack))
   ).sort()
 
   return (
@@ -34,7 +36,7 @@ export default function ProjectsPage() {
 
       <Section>
         <ProjectsFilter tags={allTags} stack={allStack} />
-        <ProjectsGrid projects={allProjects} />
+        <ProjectsGrid projects={projects} />
       </Section>
     </div>
   )

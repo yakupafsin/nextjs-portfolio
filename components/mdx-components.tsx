@@ -1,4 +1,4 @@
-import { useMDXComponent } from 'next-contentlayer/hooks'
+import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -117,15 +117,13 @@ const components = {
 }
 
 interface MdxProps {
-  code: string
+  source: MDXRemoteSerializeResult
 }
 
-export function Mdx({ code }: MdxProps) {
-  const Component = useMDXComponent(code)
-
+export function Mdx({ source }: MdxProps) {
   return (
     <div className="mdx">
-      <Component components={components} />
+      <MDXRemote {...source} components={components} />
     </div>
   )
 }

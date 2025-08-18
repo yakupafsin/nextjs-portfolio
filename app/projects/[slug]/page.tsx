@@ -1,11 +1,16 @@
 import { notFound } from 'next/navigation'
-import { allProjects } from 'contentlayer/generated'
+import { serialize } from 'next-mdx-remote/serialize'
+import { getProject, getProjects } from '@/lib/mdx'
 import { Mdx } from '@/components/mdx-components'
 import { ProjectHeader } from '@/components/project-header'
 import { ProjectLinks } from '@/components/project-links'
 import { ProjectImpact } from '@/components/project-impact'
 import { ProjectStack } from '@/components/project-stack'
 import { Section } from '@/components/section'
+import remarkGfm from 'remark-gfm'
+import rehypeHighlight from 'rehype-highlight'
+import rehypeSlug from 'rehype-slug'
+import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 
 interface ProjectPageProps {
   params: {
@@ -14,12 +19,7 @@ interface ProjectPageProps {
 }
 
 async function getProjectFromParams(params: ProjectPageProps['params']) {
-  const project = allProjects.find((project) => project.slug === params.slug)
-
-  if (!project) {
-    null
-  }
-
+  const project = await getProject(params.slug)
   return project
 }
 
@@ -59,7 +59,8 @@ export async function generateMetadata({
 }
 
 export async function generateStaticParams() {
-  return allProjects.map((project) => ({
+  const projects = await getProjects()
+  return projects.map((project) => ({
     slug: project.slug,
   }))
 }
@@ -71,19 +72,39 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     notFound()
   }
 
+  // Serialize the MDX content
+  const mdxSource = await serialize(project.content, {
+    mdxOptions: {
+      remarkPlugins: [remarkGfm],
+      rehypePlugins: [
+        rehypeHighlight,
+        rehypeSlug,
+        [
+          rehypeAutolinkHeadings,
+          {
+            properties: {
+              className: ['subheading-anchor'],
+              ariaLabel: 'Link to section',
+            },
+          },
+        ],
+      ],
+    },
+  })
+
   return (
     <article className="container py-12">
       <ProjectHeader project={project} />
-      
+
       <div className="grid gap-12 lg:grid-cols-3">
         <div className="lg:col-span-2">
           <Section>
             <div className="prose prose-lg dark:prose-invert">
-              <Mdx code={project.body.code} />
+              <Mdx source={mdxSource} />
             </div>
           </Section>
         </div>
-        
+
         <div className="space-y-8">
           <ProjectLinks links={project.links} />
           <ProjectStack stack={project.stack} />

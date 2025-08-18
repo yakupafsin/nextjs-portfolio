@@ -1,6 +1,6 @@
-import { allProjects } from 'contentlayer/generated'
+import { getProjects } from '@/lib/mdx'
 
-export default function sitemap() {
+export default async function sitemap() {
   const baseUrl = 'https://yourportfolio.com'
 
   // Static pages
@@ -32,7 +32,8 @@ export default function sitemap() {
   ]
 
   // Dynamic project pages
-  const projectPages = allProjects.map((project) => ({
+  const projects = await getProjects()
+  const projectPages = projects.map((project) => ({
     url: `${baseUrl}/projects/${project.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,

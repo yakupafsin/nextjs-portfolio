@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { ProjectCard } from '@/components/project-card'
 import { Section } from '@/components/section'
-import type { Project } from 'contentlayer/generated'
+import type { Project } from '@/lib/mdx'
 
 interface FeaturedProjectsProps {
   projects: Project[]

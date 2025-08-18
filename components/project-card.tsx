@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { ExternalLink, Github } from 'lucide-react'
 import { cn } from '@/lib/utils'
-import type { Project } from 'contentlayer/generated'
+import type { Project } from '@/lib/mdx'
 
 interface ProjectCardProps {
   project: Project
