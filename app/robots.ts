@@ -1,10 +1,12 @@
 export default function robots() {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://yakupafsin.com'
+
   return {
     rules: {
       userAgent: '*',
       allow: '/',
       disallow: ['/api/', '/admin/'],
     },
-    sitemap: 'https://yourportfolio.com/sitemap.xml',
+    sitemap: `${baseUrl}/sitemap.xml`,
   }
 }

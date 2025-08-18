@@ -16,37 +16,39 @@ const jetbrainsMono = JetBrains_Mono({
   variable: '--font-mono',
 })
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://yakupafsin.com'
+
 export const metadata: Metadata = {
   title: {
-    default: 'Your Name - Developer Portfolio',
-    template: '%s | Your Name',
+    default: 'Yakup Afsin - Developer Portfolio',
+    template: '%s | Yakup Afsin',
   },
   description: 'Full-stack developer passionate about building exceptional digital experiences.',
   keywords: ['developer', 'portfolio', 'full-stack', 'react', 'nextjs', 'typescript'],
-  authors: [{ name: 'Your Name' }],
-  creator: 'Your Name',
+  authors: [{ name: 'Yakup Afsin' }],
+  creator: 'Yakup Afsin',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://yourportfolio.com',
-    title: 'Your Name - Developer Portfolio',
+    url: siteUrl,
+    title: 'Yakup Afsin - Developer Portfolio',
     description: 'Full-stack developer passionate about building exceptional digital experiences.',
-    siteName: 'Your Name Portfolio',
+    siteName: 'Yakup Afsin Portfolio',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/og?title=Yakup%20Afsin&tag=Developer&description=Full-stack%20developer%20passionate%20about%20building%20exceptional%20digital%20experiences',
         width: 1200,
         height: 630,
-        alt: 'Your Name - Developer Portfolio',
+        alt: 'Yakup Afsin - Developer Portfolio',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Your Name - Developer Portfolio',
+    title: 'Yakup Afsin - Developer Portfolio',
     description: 'Full-stack developer passionate about building exceptional digital experiences.',
-    images: ['/og-image.jpg'],
-    creator: '@yourusername',
+    images: ['/og?title=Yakup%20Afsin&tag=Developer&description=Full-stack%20developer%20passionate%20about%20building%20exceptional%20digital%20experiences'],
+    creator: '@yakupafsin',
   },
   robots: {
     index: true,
