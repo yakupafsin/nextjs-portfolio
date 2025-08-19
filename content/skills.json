@@ -1,66 +1,9 @@
 [
-  {
-    "category": "Languages",
-    "items": [
-      "JavaScript (ES6+)",
-      "TypeScript",
-      "Python",
-      "Go",
-      "SQL"
-    ]
-  },
-  {
-    "category": "Frontend",
-    "items": [
-      "React",
-      "Next.js",
-      "Vue.js",
-      "Tailwind CSS",
-      "HTML5/CSS3",
-      "Responsive Design"
-    ]
-  },
-  {
-    "category": "Backend",
-    "items": [
-      "Node.js",
-      "Express.js",
-      "PostgreSQL",
-      "MongoDB",
-      "GraphQL",
-      "REST APIs"
-    ]
-  },
-  {
-    "category": "Cloud & DevOps",
-    "items": [
-      "AWS",
-      "Vercel",
-      "Docker",
-      "GitHub Actions",
-      "CI/CD",
-      "Serverless"
-    ]
-  },
-  {
-    "category": "Testing",
-    "items": [
-      "Jest",
-      "Testing Library",
-      "Cypress",
-      "Unit Testing",
-      "Integration Testing"
-    ]
-  },
-  {
-    "category": "Tools & Others",
-    "items": [
-      "Git",
-      "VS Code",
-      "Figma",
-      "Agile/Scrum",
-      "Performance Optimization",
-      "SEO"
-    ]
-  }
+  { "category": "Languages", "items": ["JavaScript (ES6+)", "TypeScript"] },
+  { "category": "Frontend", "items": ["React.js", "Redux", "Zustand", "Context API", "Component Reusability", "Frontend Security Practices"] },
+  { "category": "Mobile", "items": ["React Native (iOS, Android, Windows)"] },
+  { "category": "Backend", "items": ["Node.js", "REST API Integration", "GraphQL (Apollo, caching)", "Postgres"] },
+  { "category": "Testing", "items": ["Jest", "React Testing Library", "Detox (E2E)"] },
+  { "category": "DevOps", "items": ["Git (GitHub, GitLab)", "CI/CD (GitHub Actions, Azure)", "Docker Basics", "AWS (S3, EC2)"] },
+  { "category": "Other", "items": ["Debugging (Flipper, DevTools)", "Performance Optimisation", "Custom npm Packages", "Cross-Platform Development"] }
 ]

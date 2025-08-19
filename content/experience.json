@@ -1,43 +1,47 @@
 [
   {
-    "title": "Senior Full-Stack Developer",
-    "company": "TechCorp Inc.",
-    "location": "San Francisco, CA",
-    "type": "Full-time",
-    "start": "2022-01",
-    "end": "Present",
-    "summary": "Lead development of scalable web applications serving 100k+ users. Architect and implement full-stack solutions using modern technologies.",
-    "achievements": [
-      "Improved application performance by 40% through code optimization and caching strategies",
-      "Led a team of 4 developers in delivering 3 major product features ahead of schedule",
-      "Implemented comprehensive testing strategy reducing production bugs by 60%"
+    "title": "Software Developer (React Native)",
+    "company": "Zonal",
+    "start": "2024-01",
+    "end": "2025-08",
+    "summary": [
+      "Delivered full-stack solutions across mobile and web, covering architecture, development, testing, and deployment.",
+      "Implemented role-based access control and secure authentication flows in SaaS-like POS and mobile applications.",
+      "Developed and published npm packages to support custom hardware integrations and offline-first functionality."
     ],
-    "stack": [
-      "React",
-      "TypeScript",
-      "Node.js",
-      "PostgreSQL",
-      "AWS"
-    ]
+    "achievements": [
+      "Collaborated with cross-functional teams to maintain scalable architecture and optimise performance."
+    ],
+    "stack": ["React Native", "TypeScript", "Node.js", "GraphQL", "Postgres"]
   },
   {
-    "title": "Frontend Developer",
-    "company": "StartupXYZ",
-    "location": "Remote",
-    "type": "Full-time",
-    "start": "2020-06",
-    "end": "2021-12",
-    "summary": "Developed responsive web applications and collaborated with design team to create exceptional user experiences.",
-    "achievements": [
-      "Built and launched 5 customer-facing features increasing user engagement by 25%",
-      "Migrated legacy jQuery codebase to modern React architecture",
-      "Established component library used across 3 different products"
+    "title": "Full-Stack Developer",
+    "company": "Freelance & Personal Projects",
+    "start": "2021-01",
+    "end": "2024-01",
+    "summary": [
+      "Built a cross-platform ePOS application used by 20+ businesses processing thousands of transactions monthly.",
+      "Designed and maintained Postgres schemas with query optimisation and migrations.",
+      "Built and integrated GraphQL APIs with Apollo Server/Client for efficient, type-safe data fetching."
     ],
-    "stack": [
-      "JavaScript",
-      "Vue.js",
-      "Python",
-      "MongoDB"
-    ]
+    "achievements": [
+      "Developed custom React Native libraries with native C++ via TurboModules and integrated advanced hardware support."
+    ],
+    "stack": ["React Native", "Node.js", "GraphQL", "Postgres", "Apollo"]
+  },
+  {
+    "title": "Frontend Developer (React)",
+    "company": "Coreborn Software And Technology",
+    "start": "2019-01",
+    "end": "2021-12",
+    "summary": [
+      "Developed and maintained scalable web applications using React.js, TypeScript, and modern frontend tooling.",
+      "Led a small team on select projects, handling task distribution, code reviews, and mentoring.",
+      "Collaborated with backend and design teams to deliver high-performance, user-friendly interfaces."
+    ],
+    "achievements": [
+      "Implemented Redux state management, handled API integrations, and optimised performance across browsers."
+    ],
+    "stack": ["React", "TypeScript", "Redux"]
   }
 ]
