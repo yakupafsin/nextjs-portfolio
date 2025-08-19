@@ -1,21 +1,21 @@
 {
-  "name": "John Doe",
-  "role": "Full-Stack Developer",
-  "location": "San Francisco, CA",
-  "headline": "Building exceptional digital experiences with modern technologies",
-  "summary": "Passionate full-stack developer with 5+ years of experience creating scalable web applications. I specialize in React, Next.js, and Node.js, with a focus on performance, accessibility, and user experience.",
-  "email": "john.doe@example.com",
-  "website": "https://johndoe.dev",
-  "cvUrl": "https://johndoe.dev/resume.pdf",
+  "name": "Yakup Afsin",
+  "role": "Full-Stack / React & React Native Developer",
+  "location": "Edinburgh, Scotland",
+  "headline": "I build secure, performant SaaS apps and cross-platform experiences.",
+  "summary": "Full-stack developer with 7+ years' experience delivering scalable SaaS platforms, mobile apps, and web solutions using React.js, Node.js, GraphQL, and Postgres. Skilled in building secure, performant systems with clean architecture and rapid feature delivery. Experience spans mobile, web, POS systems, and AI-enhanced personal projects.",
+  "email": "hello@yakupafsin.com",
+  "website": "https://www.yakupafsin.com",
+  "cvUrl": "https://www.yakupafsin.com/cv.pdf",
   "social": {
-    "github": "https://github.com/johndoe",
-    "linkedin": "https://linkedin.com/in/johndoe",
-    "twitter": "https://twitter.com/johndoe"
+    "github": "https://github.com/yakupafsin",
+    "linkedin": "https://www.linkedin.com/in/yakupafsin",
+    "twitter": "https://twitter.com/yakupafsin"
   },
   "avatar": "/avatar.jpg",
   "seo": {
-    "title": "John Doe - Full-Stack Developer",
-    "description": "Full-stack developer passionate about building exceptional digital experiences with React, Next.js, and modern web technologies.",
-    "keywords": ["developer", "software engineer", "web development", "react", "nextjs", "typescript"]
+    "title": "Yakup Afsin - Full-Stack / React & React Native Developer",
+    "description": "Full-stack developer with 7+ years' experience delivering scalable SaaS platforms, mobile apps, and web solutions using React.js, Node.js, GraphQL, and Postgres.",
+    "keywords": ["developer", "software engineer", "react native", "react", "nodejs", "graphql", "typescript", "mobile development"]
   }
 }
