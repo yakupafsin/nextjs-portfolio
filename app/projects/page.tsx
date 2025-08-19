@@ -5,11 +5,11 @@ import { Section } from '@/components/section'
 
 export const metadata = {
   title: 'Projects',
-  description: 'A collection of projects I\'ve worked on, showcasing my skills and experience.',
+  description: 'A collection of React Native, Node.js, and full-stack projects by Yakup Afsin, showcasing mobile apps, SaaS platforms, and cross-platform development.',
   openGraph: {
     title: 'Yakup Afsin — Projects',
-    description: 'A collection of projects I\'ve worked on, showcasing my skills and experience.',
-    images: ['/og?title=Yakup%20Afsin%20—%20Projects&tag=Portfolio&description=A%20collection%20of%20projects%20showcasing%20skills%20and%20experience'],
+    description: 'A collection of React Native, Node.js, and full-stack projects showcasing mobile apps, SaaS platforms, and cross-platform development.',
+    images: ['/og?title=Yakup%20Afsin%20—%20Projects&tag=Portfolio&description=React%20Native%20and%20full-stack%20projects'],
   },
 }
 

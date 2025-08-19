@@ -20,34 +20,34 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://yakupafsin.com'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Yakup Afsin - Developer Portfolio',
+    default: 'Yakup Afsin — Full-Stack / React & React Native Developer',
     template: '%s | Yakup Afsin',
   },
-  description: 'Full-stack developer passionate about building exceptional digital experiences.',
-  keywords: ['developer', 'portfolio', 'full-stack', 'react', 'nextjs', 'typescript'],
+  description: 'Full-Stack / React & React Native Developer in Edinburgh, Scotland. 7+ years building secure, performant SaaS apps and cross-platform experiences.',
+  keywords: ['developer', 'portfolio', 'react native', 'react', 'nodejs', 'graphql', 'typescript', 'mobile development'],
   authors: [{ name: 'Yakup Afsin' }],
   creator: 'Yakup Afsin',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: siteUrl,
-    title: 'Yakup Afsin - Developer Portfolio',
-    description: 'Full-stack developer passionate about building exceptional digital experiences.',
+    title: 'Yakup Afsin — Full-Stack / React & React Native Developer',
+    description: 'Full-Stack / React & React Native Developer in Edinburgh, Scotland. 7+ years building secure, performant SaaS apps and cross-platform experiences.',
     siteName: 'Yakup Afsin Portfolio',
     images: [
       {
-        url: '/og?title=Yakup%20Afsin&tag=Developer&description=Full-stack%20developer%20passionate%20about%20building%20exceptional%20digital%20experiences',
+        url: '/og?title=Yakup%20Afsin&tag=Developer&description=Full-Stack%20React%20%26%20React%20Native%20Developer%20in%20Edinburgh',
         width: 1200,
         height: 630,
-        alt: 'Yakup Afsin - Developer Portfolio',
+        alt: 'Yakup Afsin — Full-Stack / React & React Native Developer',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Yakup Afsin - Developer Portfolio',
-    description: 'Full-stack developer passionate about building exceptional digital experiences.',
-    images: ['/og?title=Yakup%20Afsin&tag=Developer&description=Full-stack%20developer%20passionate%20about%20building%20exceptional%20digital%20experiences'],
+    title: 'Yakup Afsin — Full-Stack / React & React Native Developer',
+    description: 'Full-Stack / React & React Native Developer in Edinburgh, Scotland. 7+ years building secure, performant SaaS apps and cross-platform experiences.',
+    images: ['/og?title=Yakup%20Afsin&tag=Developer&description=Full-Stack%20React%20%26%20React%20Native%20Developer%20in%20Edinburgh'],
     creator: '@yakupafsin',
   },
   robots: {
