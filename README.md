@@ -11,11 +11,15 @@ A production-ready, open-source developer portfolio template built with Next.js 
 - **🌙 Dark Mode** with next-themes
 - **📱 Fully Responsive** design that works on all devices
 - **⚡ Performance Optimized** with Lighthouse score 95+
-- **🔍 SEO Ready** with proper meta tags and structured data
+- **🔍 SEO Ready** with dynamic sitemap and robots.txt
+- **🖼️ Dynamic OG Images** generated with @vercel/og
 - **♿ Accessible** with keyboard navigation and screen reader support
 - **🧪 Testing Setup** with Jest and Testing Library
 - **🔧 Developer Tools** with ESLint, Prettier, and Husky
 - **🚀 CI/CD Ready** with GitHub Actions
+- **📊 Bundle Analysis** with @next/bundle-analyzer
+- **✅ Content Validation** with Zod schemas
+- **🏃‍♂️ Lighthouse CI** for performance monitoring
 
 ## 📁 Project Structure
 
@@ -43,37 +47,43 @@ A production-ready, open-source developer portfolio template built with Next.js 
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm, yarn, or pnpm
 
 ### Installation
 
-1. **Clone or download this template**
+1. **Fork this repository** on GitHub
+
+2. **Clone your fork**
    ```bash
    git clone https://github.com/yourusername/nextjs-portfolio-template.git
    cd nextjs-portfolio-template
    ```
 
-2. **Install dependencies**
+3. **Install dependencies**
    ```bash
    npm install
-   # or
-   yarn install
-   # or
-   pnpm install
    ```
 
-3. **Start the development server**
+4. **Set up environment variables**
+   ```bash
+   cp .env.example .env.local
+   # Edit .env.local with your site URL
+   ```
+
+5. **Start the development server**
    ```bash
    npm run dev
-   # or
-   yarn dev
-   # or
-   pnpm dev
    ```
 
-4. **Open your browser**
+6. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
+
+7. **Edit content** in the `/content` folder
+
+8. **Deploy to Vercel** by connecting your GitHub repository
+
+For detailed setup instructions, see [SETUP.md](./SETUP.md).
 
 ## 📝 Content Customization
 
@@ -100,7 +110,20 @@ Update your basic information:
 }
 ```
 
-### 2. Skills (`content/skills.json`)
+### 2. Environment Variables
+
+Set your site URL in `.env.local`:
+
+```bash
+NEXT_PUBLIC_SITE_URL=https://yourdomain.com
+```
+
+This is used for:
+- SEO (sitemap.xml, robots.txt)
+- Dynamic OG image generation
+- Social media previews
+
+### 3. Skills (`content/skills.json`)
 
 Organize your skills by category:
 
@@ -111,7 +134,7 @@ Organize your skills by category:
     "items": ["React", "Next.js", "TypeScript", "Tailwind CSS"]
   },
   {
-    "category": "Backend", 
+    "category": "Backend",
     "items": ["Node.js", "Python", "PostgreSQL", "GraphQL"]
   }
 ]
@@ -218,6 +241,49 @@ The template works with any platform that supports Next.js:
 - **AWS Amplify**: Connect your repository
 - **Self-hosted**: Use `npm run build` and `npm start`
 
+## 🔧 Advanced Features
+
+### Dynamic OG Images
+
+The template generates dynamic Open Graph images using `@vercel/og`:
+
+```typescript
+// Automatic OG images for pages
+export const metadata = {
+  openGraph: {
+    images: ['/og?title=Page%20Title&tag=Category&description=Description'],
+  },
+}
+```
+
+### Bundle Analysis
+
+Analyze your bundle size:
+
+```bash
+npm run analyze
+```
+
+### Content Validation
+
+All content is validated with Zod schemas. Build will fail with clear error messages if content is invalid:
+
+```bash
+# Content validation happens automatically during build
+npm run build
+```
+
+### Lighthouse CI
+
+Run performance audits:
+
+```bash
+# Local Lighthouse audit
+npm run lh
+
+# CI runs automatically on PRs
+```
+
 ## 📊 Performance
 
 This template is optimized for performance:
@@ -226,7 +292,8 @@ This template is optimized for performance:
 - **Core Web Vitals**: Optimized for LCP, FID, and CLS
 - **Image Optimization**: Automatic with next/image
 - **Font Optimization**: Self-hosted fonts with next/font
-- **Bundle Analysis**: Use `npm run analyze` to check bundle size
+- **Bundle Analysis**: Built-in with `npm run analyze`
+- **Content Validation**: Zod schemas prevent runtime errors
 
 ## 🤝 Contributing
 

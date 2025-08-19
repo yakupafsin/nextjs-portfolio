@@ -1,7 +1,7 @@
 import { getProjects } from '@/lib/mdx'
 
 export default async function sitemap() {
-  const baseUrl = 'https://yourportfolio.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://yakupafsin.com'
 
   // Static pages
   const staticPages = [

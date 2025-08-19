@@ -6,6 +6,11 @@ import { Section } from '@/components/section'
 export const metadata = {
   title: 'Projects',
   description: 'A collection of projects I\'ve worked on, showcasing my skills and experience.',
+  openGraph: {
+    title: 'Yakup Afsin — Projects',
+    description: 'A collection of projects I\'ve worked on, showcasing my skills and experience.',
+    images: ['/og?title=Yakup%20Afsin%20—%20Projects&tag=Portfolio&description=A%20collection%20of%20projects%20showcasing%20skills%20and%20experience'],
+  },
 }
 
 export default async function ProjectsPage() {

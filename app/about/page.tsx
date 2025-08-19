@@ -7,6 +7,11 @@ import { Section } from '@/components/section'
 export const metadata = {
   title: 'About',
   description: 'Learn more about my background, experience, and skills.',
+  openGraph: {
+    title: 'About Yakup Afsin',
+    description: 'Learn more about my background, experience, and skills.',
+    images: ['/og?title=About%20Yakup%20Afsin&tag=Developer&description=Learn%20more%20about%20my%20background%20and%20experience'],
+  },
 }
 
 export default function AboutPage() {
