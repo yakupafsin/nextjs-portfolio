@@ -2,13 +2,11 @@
   {
     "title": "Software Developer (React Native)",
     "company": "Zonal",
+    "location": "Remote",
+    "type": "Full-time",
     "start": "2024-01",
     "end": "2025-08",
-    "summary": [
-      "Delivered full-stack solutions across mobile and web, covering architecture, development, testing, and deployment.",
-      "Implemented role-based access control and secure authentication flows in SaaS-like POS and mobile applications.",
-      "Developed and published npm packages to support custom hardware integrations and offline-first functionality."
-    ],
+    "summary": "Delivered full-stack solutions across mobile and web, covering architecture, development, testing, and deployment. Implemented role-based access control and secure authentication flows in SaaS-like POS and mobile applications. Developed and published npm packages to support custom hardware integrations and offline-first functionality.",
     "achievements": [
       "Collaborated with cross-functional teams to maintain scalable architecture and optimise performance."
     ],
@@ -17,13 +15,11 @@
   {
     "title": "Full-Stack Developer",
     "company": "Freelance & Personal Projects",
+    "location": "Remote",
+    "type": "Freelance",
     "start": "2021-01",
     "end": "2024-01",
-    "summary": [
-      "Built a cross-platform ePOS application used by 20+ businesses processing thousands of transactions monthly.",
-      "Designed and maintained Postgres schemas with query optimisation and migrations.",
-      "Built and integrated GraphQL APIs with Apollo Server/Client for efficient, type-safe data fetching."
-    ],
+    "summary": "Built a cross-platform ePOS application used by 20+ businesses processing thousands of transactions monthly. Designed and maintained Postgres schemas with query optimisation and migrations. Built and integrated GraphQL APIs with Apollo Server/Client for efficient, type-safe data fetching.",
     "achievements": [
       "Developed custom React Native libraries with native C++ via TurboModules and integrated advanced hardware support."
     ],
@@ -32,13 +28,11 @@
   {
     "title": "Frontend Developer (React)",
     "company": "Coreborn Software And Technology",
+    "location": "Istanbul, Turkey",
+    "type": "Full-time",
     "start": "2019-01",
     "end": "2021-12",
-    "summary": [
-      "Developed and maintained scalable web applications using React.js, TypeScript, and modern frontend tooling.",
-      "Led a small team on select projects, handling task distribution, code reviews, and mentoring.",
-      "Collaborated with backend and design teams to deliver high-performance, user-friendly interfaces."
-    ],
+    "summary": "Developed and maintained scalable web applications using React.js, TypeScript, and modern frontend tooling. Led a small team on select projects, handling task distribution, code reviews, and mentoring. Collaborated with backend and design teams to deliver high-performance, user-friendly interfaces.",
     "achievements": [
       "Implemented Redux state management, handled API integrations, and optimised performance across browsers."
     ],
