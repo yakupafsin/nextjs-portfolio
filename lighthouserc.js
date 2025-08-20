@@ -1,10 +1,7 @@
 module.exports = {
   ci: {
     collect: {
-      url: ['http://localhost:3000'],
-      startServerCommand: 'npm start',
-      startServerReadyPattern: 'ready on',
-      startServerReadyTimeout: 30000,
+      url: ['http://yakupafsin.com'],
     },
     assert: {
       assertions: {
